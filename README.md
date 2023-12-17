@@ -44,7 +44,7 @@ Consists of 300,000 human-written stories paired with writing prompts, used for 
 ### Preprocessing
 For image captioning, The MS COCO dataset was further split and pre-processed into train and validate datasets and the images, their associated captions were used to extract features (VGG features for the baseline model), to train the model for image captioning. Data preprocessing for the baseline model involves converting text to lowercase, removing special characters and numbers, and tokenizing the sentences. Word embeddings are generated using an embeddings layer. Data is generated in batches to manage resource consumption effectively. 
 
-For story generation, the dataset is divided into prompts and stories, both of which are utilized to train the model to generate creative and coherent text. During the fine-tuning process, the train data consisted of sequence of sentences in the format: <prompt + ’ <sep> ’ + story>
+For story generation, the dataset is divided into prompts and stories, both of which are utilized to train the model to generate creative and coherent text. During the fine-tuning process, the train data consisted of sequence of sentences in the format: <prompt + ' <sep> ' + story>
 
 ## Structure of the Experiments
 The entire work and all the different experiments including the Baselines as well as the implemetation of the final code has been in the form of five Colab notebooks. 
