@@ -5,7 +5,7 @@ In this project the stories are generated using a two part framework as descript
 
 ## 1. Dataset 
 
-Different daatses are used for the two different tasks and the captioning model is tested on a separate dataset that it is trained on.
+Different daatses are used for the two different tasks and the captioning model is tested on a separate dataset than it is trained on.
 ### Image Captioning Datasets
 #### MS COCO: 
 A large dataset with 328,000 images and 5 captions per image, used for training both the baseline (Neural) and CLIP Prefix models for image captioning. The Microsoft **C**ommon **O**bjects in **CO**ntext (MS COCO) dataset is a large-scale dataset generally used for scene understanding.
@@ -52,7 +52,7 @@ The entire work and all the different experiments including the Baselines as wel
 A neural network architecture consisting of both CNNs (Encoder) and Decoder with attention mechanism is used to automatically generate captions from images as the baseline model. For story generation, the baseline model used is a fine-tuned GPT-2 model which generates creative captions based on the prompts given (image captions along with initial prompt).
 
 ## Training Baseline Models 
-The baselines models are implement in the notebooks [Image Captioning on COCO Dataset](Baseline_BLUE_image-captioning-on-coco-dataset.ipynb) and the [Story Generation GPT-2 Baseline](Story Genration_Fine-Tuned-GPT2_baseline.ipynb)
+The baselines models are implement in the notebooks [Image Captioning on COCO Dataset]([Baseline_BLUE_image-captioning-on-coco-dataset.ipynb](https://github.com/kashishgoel9/Muti-modal-Creative-Story-Generation-from-Images-using-captioning/blob/main/Baseline_BLUE_image_captioning_on_coco_dataset.ipynb) and the [Story Generation GPT-2 Baseline](Story Genration_Fine-Tuned-GPT2_baseline.ipynb)
 
 ### Image Captioning Model (Neural Model)
 The baseline implemented image captioning model employs an encoder-decoder architecture, consisting of a pre-trained InceptionV3 convolutional neural network (CNN) with Multi-head Attention Transformer layer as the encoder to process images. The transformer encoder layer is designed to process the image features, utilizing attention mechanisms and layer normalization for efficient learning. The encoder processes image data and generates a feature vector, while the decoder generates captions for the images based on the encoded information. 
